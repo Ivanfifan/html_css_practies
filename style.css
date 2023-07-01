@@ -10,7 +10,7 @@ body {
 
 .people {
   position: relative;
-  margin-top: 50px;
+  margin-top: 70px;
   max-width: 1000px;
   display: grid;
   grid-template-columns: 200px 200px;
@@ -28,7 +28,6 @@ body {
 }
 
 .photo {
-  position: relative;
   height: 200px;
   width: 200px;
   padding-bottom: 8px;
@@ -41,19 +40,23 @@ body {
 }
 
 .rank {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #ffffff;
   color: #8b0000;
-  text-align: center;
-}
-
-.rank {
-  right: 10px;
-  position: absolute;
-  top: 90px;
+  font-size: 16px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  bottom: 120px;
+  left: 158px;
 }
 
 .details {
@@ -88,11 +91,24 @@ body {
 }
 
 .person:hover {
-  transform: scale(1.2, 1.3);
+  transform: scale(1.1, 1.3);
   border-radius: 10px;
   background: #eee;
+  animation-name: scaleAnimation;
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 .person:hover .extra {
   opacity: 100;
   visibility: visible;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.35, 1.55);
+  }
 }/*# sourceMappingURL=style.css.map */
