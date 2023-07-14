@@ -32,6 +32,8 @@ body {
   padding-bottom: 8px;
 }
 .img {
+  transition-delay: 1s;
+  transition: transform 1s;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -95,6 +97,10 @@ body {
   .extra {
     opacity: 100;
     visibility: visible;
+  }
+  .img {
+    transition-delay: 1s;
+    transform: scale(1.2);
   }
   animation-name: scaleAnimation;
   animation-duration: 0.3s;

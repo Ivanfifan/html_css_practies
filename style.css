@@ -34,6 +34,8 @@ body {
 }
 
 .img {
+  transition-delay: 1s;
+  transition: transform 1s;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -102,6 +104,10 @@ body {
 .person:hover .extra {
   opacity: 100;
   visibility: visible;
+}
+.person:hover .img {
+  transition-delay: 1s;
+  transform: scale(1.2);
 }
 
 @keyframes scaleAnimation {
